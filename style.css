@@ -1,0 +1,591 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  nav {
+    background: #111;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  }
+  
+  .navbar .nav-link {
+    color: #fff;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .navbar .nav-link:hover {
+    color: darkgoldenrod;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 6px 12px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: darkgoldenrod;
+  }
+  
+  .section {
+    padding: 80px 0;
+  }
+  
+      h2.section-title {
+        color: darkgoldenrod;
+        text-align: center;
+        margin-bottom: 50px;
+        position: relative;
+      }
+  
+      .card-custom {
+        background: #fff8dc;
+        border: 2px solid darkgoldenrod;
+        border-radius: 20px;
+        padding: 30px;
+        transition: 0.4s;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+  
+      .card-custom:hover {
+        background: darkgoldenrod;
+        color: white;
+        transform: translateY(-10px);
+      }
+  
+      .icon-style {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: darkgoldenrod;
+        transition: 0.4s;
+      }
+  
+      .card-custom:hover .icon-style {
+        color: white;
+      }
+  
+      footer p {
+        margin: 0;
+        padding: 20px 0;
+      }
+      #home img:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0 0 30px darkgoldenrod;
+    }
+  
+    #home a:hover {
+      background: white;
+      color: black;
+      border: 2px solid darkgoldenrod;
+    }
+    /* Image Hover */
+    .about-img:hover {
+      transform: scale(1.05) rotate(3deg);
+      box-shadow: 0 0 25px darkgoldenrod;
+    }
+  
+    /* Button Hover */
+    #about a:hover {
+      background: white;
+      color: black;
+      border: 2px solid darkgoldenrod;
+    }
+     /* Hover Effect for Service Cards */
+     .service-card-hover {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+  
+    .service-card-hover:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 20px 30px rgba(255, 99, 71, 0.3);
+    }
+  
+    /* Service Card Custom Styling */
+    .service-card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      transition: all 0.4s ease-in-out;
+    }
+  
+    .service-card i {
+      transition: color 0.3s ease-in-out;
+    }
+  
+    .service-card:hover i {
+      color: darkgoldenrod;
+    }
+  
+    .service-card h5 {
+      transition: color 0.3s ease-in-out;
+    }
+  
+    .service-card:hover h5 {
+      color: darkgoldenrod;
+    }
+  
+    .service-card p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  
+    .service-card:hover p {
+      color: #fff;
+    }
+  
+    /* Section Title */
+    #services h2 {
+      font-size: 2.5rem;
+      letter-spacing: 1.5px;
+    }
+  
+    /* Section Subtitle */
+    #services p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      #services h2 {
+        font-size: 2rem;
+      }
+  
+      .service-card {
+        margin-bottom: 30px;
+      }
+    }
+  
+    /* Text Hover */
+    .about-text span:hover {
+      color: white;
+      background: darkgoldenrod;
+      padding: 0 5px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+     /* Card Hover */
+     .service-card:hover {
+      background: darkgoldenrod;
+      color: black;
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px darkgoldenrod;
+      border-color: white;
+    }
+  
+    /* Icon and Text Color on Hover */
+    .service-card:hover i,
+    .service-card:hover h5 {
+      color: black;
+    }
+  
+    .service-card:hover p {
+      color: #333;
+    }
+    /* Skill Card Hover */
+    .skill-card:hover {
+      background: linear-gradient(135deg, #ffd70055, #ffffff33);
+      box-shadow: 0 0 30px #ffd700aa, 0 0 60px #ffd70055;
+      transform: translateY(-12px) scale(1.05);
+      /* background: #f8c400;
+      color: black;
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 0 25px #f8c400;
+      border-color: white; */
+    }
+  
+    /* On hover, icon and heading color change */
+    .skill-card:hover i,
+    .skill-card:hover h5 {
+      color: black;
+    }
+  
+    .skill-card:hover p {
+      color: #333;
+    }
+    /* Experience Card Hover */
+    .experience-card:hover {
+      background: linear-gradient(135deg, #ffd70055, #ffffff33);
+      box-shadow: 0 0 30px darkgoldenrod, 0 0 60px #ffd70055;
+      transform: translateY(-12px) scale(1.05);
+      /* background: #f8c400;
+      color: black;
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 0 25px #f8c400;
+      border-color: white; */
+    }
+  
+    /* On hover, icons and headings change color */
+    .experience-card:hover i,
+    .experience-card:hover h5 {
+      color: black;
+    }
+  
+    .experience-card:hover p {
+      color: #333;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      transition: 0.5s;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  
+    .glass-card:hover {
+      background: linear-gradient(135deg, darkgoldenrod, #ffffff);
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 30px darkgoldenrod;
+      color: black;
+    }
+  
+    .glass-card:hover h5,
+    .glass-card:hover p,
+    .glass-card:hover a {
+      color: black;
+    }
+  
+    .project-img {
+      transition: 0.5s;
+    }
+  
+    .glass-card:hover .project-img {
+      transform: rotate(3deg) scale(1.05);
+      filter: brightness(1.2);
+    }
+  
+    .btn-outline-warning:hover {
+      background-color: darkgoldenrod;
+      color: black;
+      border-color: white;
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+    .review-card {
+      background: #111;
+      transition: all 0.5s ease;
+      box-shadow: 0 0 0 transparent;
+    }
+    .review-card:hover {
+      background:darkgoldenrod;
+      color: black;
+      box-shadow: 0 0 25px darkgoldenrod, 0 0 50px #ffd70088;
+      transform: translateY(-10px) scale(1.03);
+      border-color: white;
+    }
+    .review-card:hover h5,
+    .review-card:hover p {
+      color: black !important;
+    }
+    .review-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.5s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 0 transparent;
+    }
+  
+    .review-card:hover {
+      background: linear-gradient(135deg, #ffd70055, #ffffff33);
+      box-shadow: 0 0 30px #ffd700aa, 0 0 60px #ffd70055;
+      transform: translateY(-12px) scale(1.05);
+    }
+  
+    .review-card img {
+      transition: 0.5s ease;
+    }
+  
+    .review-card:hover img {
+      transform: rotate(5deg) scale(1.1);
+    }
+  
+    /* Shine effect */
+    .shine {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+      transform: rotate(25deg);
+      transition: all 0.8s ease;
+      opacity: 0;
+    }
+  
+    .review-card:hover .shine {
+      left: 100%;
+      top: 100%;
+      opacity: 1;
+    }
+   /* Main Heading Gradient */
+   .text-gradient {
+    background: linear-gradient(90deg, #ffcc00, #ff69b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Blog Card Glass Effect */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+
+  .glass-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    border: 1px solid #ff69b4;
+  }
+
+  /* Blog Icon Style */
+  .blog-icon i {
+    color: #ffcc00;
+    transition: color 0.3s ease;
+  }
+
+  .glass-card:hover .blog-icon i {
+    color: #ff69b4;
+  }
+
+  /* Button Style */
+  .btn-glass {
+    background: transparent;
+    border: 1px solid #ff69b4;
+    color: #ff69b4;
+    padding: 8px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+
+  .btn-glass:hover {
+    background: #ff69b4;
+    color: #000;
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .glass-card {
+      text-align: center;
+    }
+  }
+    .contact-input {
+      background-color: #1c1c1c;
+      border: 1px solid #ffc107;
+      color: white;
+      transition: 0.4s;
+    }
+  
+    .contact-input::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  
+    .contact-input:focus {
+      background-color: #000;
+      border-color: #ffc107;
+      box-shadow: 0 0 10px #ffc107;
+      color: white;
+    }
+  
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #1c1c1c;
+      border: 1px solid #ffc107;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      color: #ffc107;
+      font-size: 20px;
+      transition: 0.4s ease;
+    }
+  
+    .social-link:hover {
+      background: #ffc107;
+      color: #000;
+      transform: scale(1.1) rotate(10deg);
+    }
+  
+    .btn-warning:hover {
+      background-color: #fff;
+      color: #000;
+      box-shadow: 0 0 15px #ffc107;
+      transition: 0.4s ease;
+    }
+  
+    /* Responsive Adjustment */
+    @media (max-width: 768px) {
+      .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
+    }
+    
+   /* Hover Effect for Service Cards */
+   .service-card-hover {
+      position: relative;
+      transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.3s ease;
+      overflow: hidden;
+    }
+  
+    .service-card-hover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 99, 71, 0.2);
+      transition: opacity 0.3s ease;
+      opacity: 0;
+    }
+  
+    .service-card-hover:hover {
+      background: linear-gradient(135deg, #ffd70055, #ffffff33);
+      box-shadow: 0 0 30px darkgoldenrod, 0 0 60px #ffd70055;
+      transform: translateY(-12px) scale(1.05);
+    }
+  
+    .service-card-hover:hover::after {
+      opacity: 1;
+    }
+  
+    /* Service Card Custom Styling */
+    .service-card {
+      background: #1c1c1c;
+      border-radius: 15px;
+      padding: 30px;
+      position: relative;
+      transition: all 0.4s ease-in-out;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    }
+  
+    .service-card i {
+      transition: color 0.3s ease-in-out;
+      font-size: 3rem;
+    }
+  
+    .service-card:hover i {
+      background: linear-gradient(135deg, #ffd70055, #ffffff33);
+      box-shadow: 0 0 30px darkgoldenrod, 0 0 60px #ffd70055;
+      transform: translateY(-12px) scale(1.05);
+    }
+  
+    .service-card h5 {
+      transition: color 0.3s ease-in-out;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  
+    .service-card:hover h5 {
+      background: linear-gradient(135deg, #ffd70055, #ffffff33);
+      box-shadow: 0 0 30px darkgoldenrod, 0 0 60px #ffd70055;
+      transform: translateY(-12px) scale(1.05);
+    }
+  
+    .service-card p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      line-height: 1.5;
+      transition: color 0.3s ease-in-out;
+    }
+  
+    .service-card:hover p {
+      color: #ffffff;
+    }
+  
+    /* Section Title */
+    #services h2 {
+      font-size: 2.8rem;
+      letter-spacing: 1.5px;
+    }
+  
+    /* Section Subtitle */
+    #services p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      #services h2 {
+        font-size: 2.3rem;
+      }
+  
+      .service-card {
+        margin-bottom: 30px;
+      }
+    }
+    .footer {
+      position: relative;
+      background: linear-gradient(135deg, #000000, #1c1c1c);
+      overflow: hidden;
+    }
+  
+    .footer-link {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+      transition: 0.4s ease;
+    }
+  
+    .footer-link:hover {
+      color: #ffc107;
+      transform: translateX(5px);
+    }
+  
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #1c1c1c;
+      border: 1px solid #ffc107;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      color: #ffc107;
+      transition: 0.4s ease;
+    }
+  
+    .social-icon:hover {
+      background: #ffc107;
+      color: #000;
+      transform: rotate(15deg) scale(1.1);
+    }
+  
+    .footer h5 {
+      font-size: 1.5rem;
+    }
+  
+    .footer p, .footer li {
+      font-size: 1rem;
+    }
+  
+    hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  
+    /* Responsive Adjustments */
+    @media (max-width: 767px) {
+      .footer {
+        text-align: center;
+      }
+      .social-icon {
+        margin: 5px;
+      }
+    }
